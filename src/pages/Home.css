@@ -1,0 +1,27 @@
+.home {
+    flex-direction: column;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 50px; /* Add some padding */
+}
+.home-content {
+    text-align: center; /* Center text within the home */
+}
+.phone-icon {
+    height: 100px; /* Adjust icon size as needed */
+    margin-bottom: 20px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.contact-icons button {
+    margin: 0 10px;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    cursor: pointer;
+}

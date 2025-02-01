@@ -1,0 +1,160 @@
+/* NavBar.css */
+.navbar {
+    background-color: #000000;
+    padding: 10px 0 7px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ensure navbar has a fixed height */
+    z-index: 1000;
+    /* Keep it above other elements */
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar+* {
+    margin-top: 60px;
+    /* Push content down */
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+.navbar.visible {
+    transform: translateY(0);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85%;
+    /* Optional: set a max width */
+    margin: 0 auto;
+    /* Center the content */
+}
+
+.nav-left {
+    padding: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+}
+.nav-right.open {
+    display: flex;
+}
+
+
+.logo {
+    height: 60px;
+    /* Adjust logo size */
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.menu {
+    height: 25px;
+    /* Adjust logo size */
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row; /* Keep items in a row on large screens */
+    justify-content: center;
+    position: static; /* Remove absolute positioning */
+    background: none; /* Remove background color */
+    width: auto; /* Don't force full width */
+    padding: 0;
+
+}
+
+.nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    /* Example link color */
+}
+
+.nav-link:hover {
+    color: #c5fdf2;
+}
+
+.nav-link a {
+    text-decoration: none;
+}
+
+.nav-link.active {
+    color: #c5fdf2;
+    /* Replace blue with your desired active color */
+}
+
+.lang-switch {
+    padding: 0 10px 8px;
+    display: flex;
+}
+
+.lang-switch button {
+    color: #c5fdf2;
+    margin: 5px;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    background-color: #000;
+    display: none;
+    /* Hide the hamburger menu icon on larger screens */
+}
+.menu-toggle :hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust breakpoint as needed */
+    .navbar {
+        padding-bottom: 7px;
+        flex-direction: column;
+    }
+
+    .nav-left {
+        margin-right: auto;
+        margin-bottom: 0px;
+    }
+
+    .nav-right {
+        display: none;
+        flex-direction: column; /* Stack items vertically */
+        padding-bottom: 20px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #202938; /* Keep navbar styling */
+    }
+
+    .menu-toggle {
+        margin-left: 20px;
+        display: block;
+    }
+
+    .nav-right.open {
+        display: flex;
+        /* Align links horizontally when open */
+    }
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        /* Optional: set a max width */
+        margin: 0 auto;
+        /* Center the content */
+    }
+
+    .nav-link {
+        margin-top: 20px;
+    }
+}

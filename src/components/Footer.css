@@ -1,0 +1,47 @@
+.icon-border {
+    align-content: center;
+    background-color: #31434d;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+.b-logo {
+    height: 40px; /* Adjust logo size */
+    border-radius: 15px;
+}
+.line {
+    margin-right: 15px;
+    width: 1px;
+    height: 40px;
+    background-color: #31434d;
+}
+.footer {
+    background-color: #000000; /* Example footer background color */
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push footer to bottom */
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-uper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-uper p {
+    font-size: 10px;
+}
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
