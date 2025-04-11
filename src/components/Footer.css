@@ -1,47 +1,113 @@
-.icon-border {
-    align-content: center;
-    background-color: #31434d;
-    border-radius: 5px;
-    width: 40px;
-    height: 40px;
-    margin: 0 5px;
-}
 .b-logo {
-    height: 40px; /* Adjust logo size */
+    width: 75px;
+    margin-right: 10px;
     border-radius: 15px;
 }
-.line {
-    margin-right: 15px;
-    width: 1px;
-    height: 40px;
-    background-color: #31434d;
+.b-logo:hover {
+    transform: scale(1.05);
 }
+
+.line {
+    margin-left: 10px;
+    margin-right: 15px;
+    height: 75px;
+    width: 0.5px;
+    max-height: 100%;
+    background-color: #ffffff;
+}
+
 .footer {
-    background-color: #000000; /* Example footer background color */
+    background-color: #0d111a;
     color: rgb(255, 255, 255);
     padding: 20px;
-    text-align: center;
-    margin-top: auto; /* Push footer to bottom */
+    text-align: start;
+    margin-top: auto;
+
 }
+
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.footer-uper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer-uper p {
-    font-size: 10px;
-}
-.social-icons {
-    display: flex;
     margin-top: 10px;
 }
+
+.footer-uper {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.name {
+    color: #87ecd8;
+}
+
+.copyright {
+    color: #9eaab8;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.uper-right a {
+    color: #9eaab8;
+    font-size: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    margin: 10px 0 15px 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.social {
+    color: #9eaab8;
+    font-weight: bold;
+    font-family: Hanuman, serif;
+    display: flex;
+    justify-self: center;
+}
+
+.social-icons {
+    display: flex;
+    padding-top: 10px;
+}
+
 .social-icons img {
-    width: 30px;
-    height: 30px;
-    margin-top: 3px;
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+.icon-border {
+    display: flex;
+    /* Use flexbox to center the image */
+    align-items: center;
+    /* Vertically center the image */
+    justify-content: center;
+    /* Horizontally center the image */
+    background-color: #31434d;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+}
+
+.icon-border:hover {
+    border: 2px solid #87ecd8;
+    transform: scale(1.2);
+}
+
+
+@media (min-width: 1026px) {
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 5px 125px 5px 125px;
+    }
+
 }

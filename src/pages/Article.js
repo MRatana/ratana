@@ -1,11 +1,20 @@
 import React from 'react';
 import './Article.css';
+import { useTranslation } from 'react-i18next';
 
 function Article() {
+
+  const { t } = useTranslation();
+
   return (
     <div className="Article-page">
-      <h1>Article</h1>
-      {/* Add content for the Article page here */}
+
+      <div className='Article'>
+        <div className='line-h'></div>
+        <div className='arti'>{t("article")}</div>
+        <div className='line-h'></div>
+      </div>
+
     </div>
   );
 }

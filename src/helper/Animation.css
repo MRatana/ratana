@@ -1,0 +1,53 @@
+.animat {
+    display: flex;
+    justify-content: center; /* Centers content inside */
+    align-items: center; /* Centers content inside */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Send it to the background */
+    opacity: 0.8; /* Adjust transparency if needed */
+}
+.animat svg path {
+    stroke-width: 3;
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+    fill-opacity: 1;
+    animation: textAnimation 5s ease-in-out infinite;
+}
+@keyframes textAnimation {
+    0% {
+        fill-opacity: 0;
+        stroke-dashoffset: 1300;
+    }
+    90% {
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }   
+    100% {
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.animat svg path.code {
+    fill: transparent;
+    stroke: #00E426;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    stroke-width: 0.5;
+    animation: codeAnimation 5s ease-in-out infinite;
+}
+@keyframes codeAnimation {
+    0% {
+        stroke-dashoffset: 50;
+    }
+    90% {
+        fill: #00E426;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        fill: #00E426;
+        stroke-dashoffset: 0;
+    }
+}

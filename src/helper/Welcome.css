@@ -1,0 +1,20 @@
+.welcome svg path {
+    fill: transparent;
+    stroke: url(#Gradient1);
+    stroke-width: 0.5;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+    animation: welcomeAnimation 4s ease-in-out 1 forwards;
+}
+@keyframes welcomeAnimation {
+    0% {
+        stroke-dashoffset: 700;
+    }
+    80% {
+        fill: transparent;
+    }
+    100% {
+        fill: url(#Gradient1);
+        stroke-dashoffset: 0;
+    }
+} 

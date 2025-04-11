@@ -1,0 +1,207 @@
+.summary-section {
+  background-color: white;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.summary-title {
+  font-family: khmer, serif;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.summary-container {
+  z-index: 2;
+  align-self: center;
+  background: rgba(233, 233, 237, 0.8);
+  padding: 15px;
+  /* Reduced padding */
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.479);
+  margin: 100px 0px 60px 0px;
+  /* Adjusted margins */
+  max-width: 90%;
+  /* Use percentage for responsiveness */
+  width: 800px;
+  /* Set a base width */
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-animation {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 15px;
+  max-width: 90%;
+  /* Responsive animation */
+  max-height: 90%;
+  width: 503px;
+  height: 370px;
+}
+
+.summary-list {
+  margin-top: 15px;
+  /* Reduced margin */
+  display: flex;
+  flex-direction: row;
+}
+
+.summary-content p {
+  display: flex;
+  color: black;
+  font-family: Hanuman, serif;
+  font-size: 18px;
+  /* Slightly reduced font size */
+}
+
+.summary-content strong {
+  color: #000000;
+  margin-left: 8px;
+  /* Reduced margin */
+}
+
+.summary-content ul {
+  color: black;
+  font-family: Hanuman, serif;
+  font-size: 18px;
+  /* Slightly reduced font size */
+  margin: 5px 0;
+  padding-left: 20px;
+  /* Add padding for list alignment */
+}
+
+.summary-content span {
+  font-size: 18px;
+  /* Slightly reduced font size */
+}
+
+.study-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  /* Reduced margin */
+  margin-left: 0;
+  /* Remove left margin */
+}
+
+.radio-icon {
+  margin-top: 4px;
+  /* Reduced margin */
+  width: 12px;
+  /* Reduced size */
+  height: 12px;
+  /* Reduced size */
+}
+
+.icon {
+  display: flex;
+  align-self: center;
+  width: 22px;
+  /* Reduced size */
+  height: 22px;
+  /* Reduced size */
+  color: #53c5ae;
+  margin-right: 8px;
+  /* Reduced margin */
+}
+
+.summary-content li {
+  display: flex;
+  align-self: center;
+  width: auto;
+}
+
+.social-title {
+  margin-top: 8px;
+  /* Reduced margin */
+  text-align: center;
+  font-size: 16px;
+  /* Reduced font size */
+  color: #0f5b4c;
+  font-weight: bold;
+  font-family: khmer, serif;
+}
+
+.social-media {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.social-about {
+  display: flex;
+  margin-top: 8px;
+  /* Reduced margin */
+  flex-wrap: wrap;
+  /* Allow wrapping of icons */
+  justify-content: center;
+  /* Center icons on smaller screens */
+}
+
+.social-about img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.about-icon {
+  display: flex;
+  /* Use flexbox to center the image */
+  align-items: center;
+  /* Vertically center the image */
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 5px;
+  width: 40px;
+  /* Reduced size */
+  height: 40px;
+  margin-right: 7px;
+  
+}
+
+.about-icon:hover {
+  border: 2px solid #87ecd8;
+  transform: scale(1.2);
+}
+
+/* Media Query for Smaller Screens */
+@media (min-width: 430px),
+(max-width: 768px) {
+  .summary-title {
+    font-size: 24px;
+  }
+
+  .summary-container {
+    max-width: 98%;
+  }
+
+  .summary-content p,
+  .summary-content strong,
+  .summary-content ul,
+  .summary-content li {
+    font-size: 17px;
+  }
+
+  .about-animation {
+    width: 453px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 430px) {
+  .about-animation {
+    width: 80%;
+    height: 45%;
+  }
+}

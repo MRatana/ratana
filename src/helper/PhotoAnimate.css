@@ -1,0 +1,27 @@
+.circle-animation {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 1560;
+    animation: drawAndRotate 10s linear forwards, reverseRotate linear 10s forwards;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+
+
+@keyframes drawAndRotate {
+    0% {
+        stroke-dashoffset: 1560;
+        
+    }
+    50% {
+        stroke-dashoffset: 0;
+        
+    }
+}
+@keyframes reverseRotate {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
