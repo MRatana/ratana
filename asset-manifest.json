@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ratana/static/css/main.0d52a4c0.css",
-    "main.js": "/ratana/static/js/main.7cffeac4.js",
+    "main.js": "/ratana/static/js/main.cc069577.js",
     "static/js/531.38db01e7.chunk.js": "/ratana/static/js/531.38db01e7.chunk.js",
     "static/js/337.8e2d2993.chunk.js": "/ratana/static/js/337.8e2d2993.chunk.js",
     "static/js/12.1ba4f4b4.chunk.js": "/ratana/static/js/12.1ba4f4b4.chunk.js",
@@ -35,12 +35,12 @@
     "static/media/linkedin.png": "/ratana/static/media/linkedin.9488a0b86b0538dc369e.png",
     "index.html": "/ratana/index.html",
     "main.0d52a4c0.css.map": "/ratana/static/css/main.0d52a4c0.css.map",
-    "main.7cffeac4.js.map": "/ratana/static/js/main.7cffeac4.js.map",
+    "main.cc069577.js.map": "/ratana/static/js/main.cc069577.js.map",
     "488.0999db96.chunk.js.map": "/ratana/static/js/488.0999db96.chunk.js.map",
     "38.73229109.chunk.js.map": "/ratana/static/js/38.73229109.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d52a4c0.css",
-    "static/js/main.7cffeac4.js"
+    "static/js/main.cc069577.js"
   ]
 }
