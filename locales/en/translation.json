@@ -1,0 +1,27 @@
+{
+    "welcome": "Hello, I'm Ratana",
+    "description": "I am a growing Node.js developer building dynamic web applications.",
+    
+    "skill":"SKILL",
+    "contact-me":"CONTACT ME",
+
+    "home":"Home",
+    "blog":"Blogs",
+    "about":"About",
+
+    "article":"Articles",
+    "social":"Social Media",
+
+    "uper-home-description":"a Frontend web developer focused on building responsive, attractive, and user-friendly web applications. In addition to my web development skills, I also have experience in Frontend mobile development using Java and XML-based UI design in Android Studio.",
+    "lower-home-description":"I'm on the lookout for fresh opportunities and happy to connect. Don't hesitate to drop me a line with your questions or a simple greeting I'll make sure to respond as soon as possible!",
+
+    "personal-info": "Personal Info",
+    "name": "Full Name:",
+    "my-name": "Meng Ratana",
+    "p-o-b": "Place of Birth:",
+    "my-p-o-b": "Battambang",
+    "study": "Education:",
+    "high-school": "High School (BAC II) , Moung Ruessei High School",
+    "college": "Bachelor of Information Technology Engineering (ITE), RUPP",
+    "work": "Work Experience:"
+}
