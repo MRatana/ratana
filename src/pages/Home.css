@@ -122,7 +122,6 @@
 }
 
 .contacts {
-    margin-right: 10px;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -140,6 +139,7 @@
 }
 
 .skills {
+    margin-right: 10px;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -250,7 +250,12 @@
     }
 
     .skills {
-        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .bg-animation {
+        width: 80%;
+        height: 80%;
     }
 
     .photo-animation {
@@ -279,6 +284,10 @@
 
     .welcome-animation {
         min-width: 30%;
+    }
+
+    .home-content {
+        font-size: 1.8rem;
     }
 }
 

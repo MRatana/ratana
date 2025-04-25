@@ -25,7 +25,12 @@ const LanguageSwitcher = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center px-4 py-2 border-2 border-[#87ecd8] rounded-md bg-gray-800 text-white hover:bg-gray-700"
       >
-        <img src={languages[i18n.language]?.flag} alt="Flag" className="w-8 h-8" />
+        <img
+          src={languages[i18n.language] ? languages[i18n.language].flag : khFlag}
+          alt="Flag"
+          className="w-8 h-8"
+        />
+
         {/* {languages[i18n.language]?.name} */}
       </button>
 

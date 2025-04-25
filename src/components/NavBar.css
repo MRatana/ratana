@@ -142,6 +142,7 @@
     }
 
     .nav-right.open {
+        padding-left: 20px;
         display: flex;
         /* Align links horizontally when open */
     }
@@ -156,7 +157,6 @@
     }
 
     .nav-link {
-        margin-left: 20px;
         margin-top: 20px
     }
 }

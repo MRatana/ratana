@@ -7,9 +7,9 @@ export default function PhotoAnimate() {
         <div className='photo'>
             <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                <circle cx="250" cy="250" r="248" stroke="#3bb59c" strokeWidth="4" strokeDasharray="1560"
+                {/* <circle cx="250" cy="250" r="248" stroke="#3bb59c" strokeWidth="4" strokeDasharray="1560"
                     strokeDashoffset="1560"
-                    transform="rotate(180 250 250)" className="circle-animation" />
+                    transform="rotate(180 250 250)" className="circle-animation" /> */}
 
                 <rect x="98" y="57" width="305" height="368" fill="url(#pattern0_12_2)" />
 

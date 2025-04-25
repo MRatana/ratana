@@ -46,7 +46,10 @@
     color: #9eaab8;
     font-size: 1rem;
     margin-top: 10px;
-    padding-left: 20px;
+}
+
+.start-right {
+    margin-left: 20px;
 }
 
 .uper-right a {
@@ -100,6 +103,16 @@
     transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+
+    .b-logo {
+        min-width: 45px;
+    }
+    .line {
+        margin-right: 5px;
+    }
+
+}
 
 @media (min-width: 1026px) {
 

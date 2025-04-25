@@ -49,7 +49,7 @@ function Home() {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-    
+
     const skills = [
         { name: "JAVA", percentage: "75%", icon: <img src={JavaIcon} alt="Java" style={{ width: iconSize, height: iconSize }} /> },
         { name: "HTML", percentage: "75%", icon: <img src={HtmlIcon} alt="HTML" style={{ width: iconSize, height: iconSize }} /> },
@@ -86,8 +86,10 @@ function Home() {
                     <h2 className="hello text-white font-popin text-2xl lg:text-4xl font-extrabold uppercase mt-6 lg:pt-0">Hello, I'm Ratana,</h2>
                     <div className="text1" fetchpriority="high">{t("uper-home-description")}</div>
                     <div className='linkTo'>
-                        <div className='contacts' onClick={scrollToLower}>{t("contact-me")}</div>
+
                         <div className='skills' onClick={scrollToMiddle}>{t("skill")}</div>
+                        <div className='contacts' onClick={scrollToLower}>{t("contact-me")}</div>
+
                     </div>
                 </div>
                 <div className="upper-right-home relative overflow-hidden">
@@ -97,7 +99,7 @@ function Home() {
                     <div className="photo-animation">
                         <PhotoAnimation />
                     </div>
-                    {/* <img src={MyPhoto} alt='My Photo' style={{ width: "300px", height: "auto" }} /> */}
+                    {/* <img src={MyPhoto} alt='My Photo' /> */}
 
                 </div>
 
