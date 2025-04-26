@@ -17,6 +17,9 @@ i18n
       order: ["localStorage"],
       caches: ["localStorage"],
     },
+    backend: {
+      loadPath: process.env.PUBLIC_URL + '/locales/{{lng}}/{{ns}}.json',
+    },
   });
 
 export default i18n;
