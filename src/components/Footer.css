@@ -1,7 +1,6 @@
 .b-logo {
-    width: 75px;
+    width: 60px;
     margin-right: 10px;
-    border-radius: 15px;
 }
 .b-logo:hover {
     transform: scale(1.05);
